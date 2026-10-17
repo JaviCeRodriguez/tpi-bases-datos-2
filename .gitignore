@@ -1,0 +1,17 @@
+#============# Dependencias y archivos generados #============#
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+
+#============# Secretos y respaldos #============#
+.env
+.env.*
+!.env.example
+resguardos_tpi/
+*.bson
+backup.config.yml
+backup.config.yaml
+*.pem
+*.key
