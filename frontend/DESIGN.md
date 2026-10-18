@@ -41,7 +41,7 @@ Estados de pedido: pendiente azul grisáceo, confirmado ámbar, completado verde
 
 ## Adaptación
 
-- Escritorio: barra lateral de 240 px, cuatro métricas en una fila.
+- Escritorio: barra lateral de 240 px con desplazamiento propio, separado del contenido principal; cuatro métricas en una fila.
 - Tableta: barra lateral compacta de 72 px; métricas en dos columnas.
 - Móvil (hasta 600 px): menú lateral desplegable, contenido a 15 px del borde y tablas desplazables. Los formularios mantienen controles táctiles de al menos 40 px.
 

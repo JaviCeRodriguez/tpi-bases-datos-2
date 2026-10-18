@@ -2,17 +2,37 @@
 
 Prototipo de tienda desarrollado con React, TypeScript, Vite, Tailwind CSS y shadcn/ui a partir del mockup HTML del equipo. Funciona con datos ficticios en memoria; al recargar, vuelve al estado inicial. La integración con la API Express está pendiente.
 
-## Ejecutar
+## Requisitos
 
-Requiere Node.js compatible con Vite 7 (20.19+ o 22.12+).
+| Herramienta | Para qué se usa |
+| --- | --- |
+| [Node.js](https://nodejs.org/en/download) | Ejecutar Vite. Se necesita una versión compatible: **20.19+ o 22.12+**, según la [guía de Vite](https://vite.dev/guide/). |
+| npm | Instalar las dependencias y ejecutar los comandos del proyecto. Viene con la instalación habitual de Node.js; no hace falta instalar Vite globalmente. |
+| IDE o editor | Recomendado para modificar código: Visual Studio Code u otro editor con soporte para TypeScript. No es necesario para levantar el servidor. |
+| Navegador web | Abrir la aplicación localmente. |
+
+Comprobá que Node.js y npm estén disponibles en la terminal:
+
+```powershell
+node --version
+npm --version
+```
+
+## Levantar el servidor de desarrollo
+
+Desde la **raíz del repositorio**, ejecutá:
 
 ```powershell
 cd frontend
-npm install
+npm ci
 npm run dev
 ```
 
-Abrir `http://localhost:5173`. Para comprobar la compilación de producción: `npm run build`.
+`npm ci` instala las versiones registradas en `package-lock.json`. Cuando Vite indique que está listo, abrí **http://localhost:5173/**. Si ese puerto está ocupado, usá la dirección `Local` que Vite muestre en la terminal. Mantené la terminal abierta mientras uses la aplicación y detené el servidor con `Ctrl+C`.
+
+El prototipo usa mocks en memoria: **no necesita levantar el backend ni configurar `.env`**. Los datos vuelven al estado inicial al recargar la página.
+
+Para comprobar la compilación de producción, ejecutá `npm run build` desde `frontend/`. El comando `npm run preview` permite ver localmente esa compilación.
 
 ## Estructura
 
@@ -27,7 +47,7 @@ Abrir `http://localhost:5173`. Para comprobar la compilación de producción: `n
 | `src/mocks/` | Datos de demostración y reglas de negocio del mock |
 | `src/lib/constants/` | Categorías, estados, navegación y paginación |
 
-La [guía de estilos](DESIGN.md) registra colores, tipografía y patrones. Las [reglas de trabajo](AGENTS.md) establecen convenciones para los siguientes cambios.
+La [guía de uso](USO.md) incluye un diagrama de secuencia y un flujo de pantallas. La [guía de estilos](DESIGN.md) registra colores, tipografía y patrones. Las [reglas de trabajo](AGENTS.md) establecen convenciones para los siguientes cambios.
 
 ## Alcance del prototipo
 
